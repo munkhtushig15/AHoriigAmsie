@@ -4,7 +4,7 @@
   }
   body {
     font-family: "Arial";
-    width: 100%;
+    width: 100vw;
   }
   .header {
     max-width: 100%;
@@ -12,7 +12,7 @@
     max-height: 809px;
     background-color: #10023c;
     color: white;
-    background-image: url(./photos/Cyberpunk2077_EN.jpeg);
+    background-image: url(./photos/screen-image-about-08a097de.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,6 +49,9 @@
   .navbar a {
     color: white;
     text-decoration: none;
+  }
+  .hamburger {
+    display: none;
   }
   .headerBottom {
     width: 100%;
@@ -105,7 +108,7 @@
   }
   
   .aboutUs {
-    height: 348.76px;
+    height: fit-content;
     background: #f0f4f5;
     padding-top: 50px;
     padding: 100px 190px 77px;
@@ -148,14 +151,15 @@
     line-height: 26px;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
   .main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 79px;
+    padding-top: 20%;
     gap: 8px;
-  
     height: 1491px;
   }
   .mainContentContainer {
@@ -464,11 +468,97 @@
     color: rgba(4, 11, 52, 0.3);
   }
     /* 320px - 480px mobile devices */
-    /* @media screen and (min-width: 320px) and (max-width: 480px) {
-        
-    } */
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      .headerBottomRight img {
+        display: none;
+      }
+      .navbar a {
+        display: none;
+      }
+      .hamburger {
+        display: inline-block;
+      }
+      .barsss {
+        display: inline-block;
+        font-size: 25px !important;
+        color: #FFFFFF;
+      }
+      .headerBottomLeft {
+        width: 100%;
+        height: 100%;
+      }
+      .aboutUs {
+        padding: 30% 15% 10% 15%;
+      }
+      .aboutUsMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        height:fit-content;
+        width: 100%;
+      }
+      .descriptionContainer {
+        width: 100%;
+        height: fit-content;
+        text-align: center;
+      }
+
+      /* main */
+      .main {
+        width: 100vw;  
+        height: fit-content;
+        padding-bottom: 30%;
+      }
+      .subContainer {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding-top: 30%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .itemImg {
+        width: 320px;
+        height: 320px;
+        background-image: url(./photos/Cyberpunk2077_EN.jpeg);
+      }
+      .itemDescription {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .itemDescription h2 {
+        width: 60%;
+        height: fit-content;
+        margin-top: 10%;
+      }
+      
+      .itemDescription span {
+        width: 60%;
+        height: fit-content;
+        margin-top: 10%;
+      }
+      .itemDescription p {
+        width: 60%;
+        height: fit-content;
+        font-family: "Arial";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 10%;
+        color: #4a4e65;
+      }
+
+      /* OUR SOLUTIONS */
+
+      
+    }
 
     /* 769px - 1024px Small screens, laptops */
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
-        
-    }
+    
