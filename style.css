@@ -525,7 +525,6 @@
         flex-direction: column;
       }
       .itemImg {
-        margin-top: 20px;
         width: 320px;
         height: 320px;
         background-image: url(./photos/Cyberpunk2077_EN.jpeg);
@@ -552,13 +551,6 @@
       .itemDescription p {
         width: 60%;
         height: fit-content;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        margin-top: 10%;
-        color: #4a4e65;
       }
 
       /* OUR SOLUTIONS */
@@ -798,9 +790,10 @@
         height: fit-content;
       }
       .itemImg {
-        width: 45%;
-        height: 45%;
+        width: 300px;
+        height: 300px;
         background-image: url(./photos/Cyberpunk2077_EN.jpeg);
+        border-radius: 20px;
       }
       
       .itemDescription {
@@ -850,170 +843,93 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         gap: 60px;
-        margin: auto;
-        background-color: #f0f4f5;
-        height: 493px;
+        height: fit-content;
       }
       .ourSolutions p {
         width: 50%;
-        height: 17px;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 37px;
-        text-align: center;
-        color: #040b34;
+        height: fit-content;
       }
       .ourSolutions span {
         width: 60px;
         height: 0px;
-        border: 1.5px solid #351b7a;
+        margin-bottom: 20px;
       }
       .ourSolutionElementsContainer {
-        width: 80%;
+        width: 100%;
         height: 100%;
-        margin-top: -60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
       }
       .ourSolutionElement {
-        width: 22%;
-        height: 70%;
-        border-radius: 10px;
-        background-color: white;
+        width: 80%;
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
       }
       .ourSolutionElement img {
-        height: 76.32px;
+        width: 100%;
+        height: fit-content;
+        border-radius: 20px 20px 0 0 ;
       }
       .ourSolutionElement h2 {
         margin-top: 20px;
-        width: 105px;
-        height: 30px;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 30px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
       }
       .ourSolutionElement p {
         text-align: center;
-        width: 256px;
-        height: 53.1px;
+        width: 100%;
+        height: fit-content;
         margin-top: 20px;
-        color: #4a4e65;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
       }
 
       /* footer */
 
       .footer {
-        width: 90%;
-        height: 357.89px;
-        padding-bottom: 20px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5%;
+        width: 100%;
+        height: fit-content;
       }
       .halfFooter {
         width: 90%;
-        height: 357.89px;
-        margin: auto;
+        height: fit-content;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 150px;
       }
       .pineconeSection {
-        width: 40%;
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 2%;
+        width: 80%;
+        height: fit-content;
       }
       .pineconeSection h2 {
-        width: 152.73px;
-        height: 37px;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 37px;
+        width: 100%;
+        height: fit-content;
       }
       
       .pineconeSection p {
-        width: 377px;
-        height: 78px;
-        left: 106px;
-        top: 164px;
-      
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        /* or 162% */
-        color: rgba(4, 11, 52, 0.5);
-        text-align: justify;
-        margin-top: 20px;
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 30px;
       }
       .email {
-        width: 40%;
+        width: 100%;
         height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 2%;
-      }
-      .followus {
-        display: flex;
-        flex-direction: row;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 26px;
-        left: 1122.63px;
-        top: 117px;
-        text-indent: 10px;
-        align-items: flex-end;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 26px;
-        /* identical to box height, or 162% */
-      
-        text-align: justify;
-        color: #040b34;
-      }
-      .followus a {
-        list-style-type: none;
-        color: #040b34;
-        font-size: 22px;
-        list-style: none;
       }
       .email button {
-        width: 300px;
+        width: 80%;
         height: 50px;
-        border-radius: 10px;
-        border: none;
       }
       .button {
-        width: 488px;
+        width: 80%;
         height: 46px;
         display: flex;
         justify-content: space-between;
@@ -1022,49 +938,13 @@
         margin-top: 50px;
       }
       #email {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 60px;
-        border: 0.5px solid silver;
-      }
-      #subscribe {
-        position: absolute;
-        width: 30%;
-        height: 100%;
-        background: #351b7a;
-        color: white;
-        right: 0;
-        border-radius: 60px;
-      }
-      
-      #subscribe i {
-        border: 1px solid white;
-        padding: 2.5px 6px;
-        border-radius: 100%;
-        margin-left: 10px;
-      }
-      .lastFooter {
-        width: 90%;
-        height: auto;
-      }
-      .footer span {
-        width: 80%;
-        height: 2px;
-        background-color: #040b34;
-        /* border: 1.5px solid rgba(4, 11, 52, 0.1); */
+        padding-left: 15px;
       }
       .copyright {
-        width: 222px;
-        height: 26px;
-        font-family: "Arial";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 26px;
-        /* identical to box height, or 186% */
-      
-        text-align: center;
-        color: rgba(4, 11, 52, 0.3);
+        width: 100%;
+        height: fit-content;
+      }
+      p {
+        padding-top: 20px;
       }
     }
